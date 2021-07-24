@@ -2,6 +2,7 @@
 
 #### 介绍
 桂电的教务系统爬虫，基于Apache HttpClient的JavaWeb项目
+项目初衷是为微信小程序提供后端服务
 已实现的功能：
 1   获取成绩
 2   获取课表
@@ -10,34 +11,34 @@
 5   已选课程
 
 #### 软件架构
-软件架构说明
+本项目为由maven项目转换而来的web项目，
+项目整体逻辑很简单，即用HttpClient实现爬虫操作
+
 
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  运行环境请按照好jdk11以上，tomcat请安装tomcat8以上
+2.  **/target/mpapi下有tomcat.war可直接部署到tomcat中**
+3.  error请重启tomcat，重启不恢复请等待一段时间
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  目前项目较为稳定，但偶现error，按照逻辑应该是密码错误，
+    但仍未确定原因。因为有时候同一个war包安装到两台服务器，同样的请求参数，
+    一个正常返回，另一个error，重启tomcat、重新部署都没有用，就算重装服务器系统也没用，
+    但是等待一段时间就好了
+2.  请求参数在jsp注释中
+3.  基于tomcat，并发能力尚可
+4.  只有请求参数完整才能正确返回，否则500
 
 #### 参与贡献
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+1.  独立开发者：@Limou
+2.  新建 master 分支
+3.  提交代码：@Limou
 
 
 #### 特技
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+1.  无
